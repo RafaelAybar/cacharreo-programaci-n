@@ -25,3 +25,4 @@ replay_pid*
 
 # Eclipse Config
 .metadata/
+/java/Hotel/Hotel/target/

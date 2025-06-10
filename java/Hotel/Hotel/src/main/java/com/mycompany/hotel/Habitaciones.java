@@ -9,7 +9,5 @@ package com.mycompany.hotel;
  * @author rafa
  */
 public class Habitaciones {
-    public static void main(String[] args){
-        final int maximoHabitaciones = 500;
-    }
+    
 }

@@ -3,15 +3,34 @@
  */
 
 package com.mycompany.hotel;
-
+import java.util.Scanner;
 /**
  *
  * @author rafa
  */
 public class Hotel {
-
+/* Pendiente de generar el menú de opciones*/
     public static void main(String[] args) {
-        System.out.println("Bienvenido al Hotel Continental");
-        
+        System.out.println("Bienvenido al hotel continental \n Selecciona tu opción");
+        System.out.println("""
+                           1: Crear reserva
+                           2: Modificar reserva
+                           3: Anular reserva
+                           Cualquier otra tecla: Salir
+                           """);
+        Scanner menu = new Scanner (System.in);
+ 
+        short respuesta = menu.nextShort();
+        switch (respuesta){
+            case 1: System.out.println("Introduce los datos");
+                break;
+            case 2: System.out.println("Introduce el identificador de reservas");
+                String id_reserva = menu.next();
+                System.out.println("La reserva a modificar es:" + id_reserva);
+                break;
+            case 3: System.out.println("Introduce el identificador de reservas para anular");
+                break;
+            default: System.out.println("Adios");
+        }
     }
 }
