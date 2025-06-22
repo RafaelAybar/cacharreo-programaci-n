@@ -18,7 +18,7 @@ public class Hotel {
                            1: Crear reserva
                            2: Modificar reserva
                            3: Anular reserva
-                           Cualquier otra tecla: Salir
+                           Cualquier otra númeo: Salir
                            """);
         Scanner menu = new Scanner(System.in);
 
