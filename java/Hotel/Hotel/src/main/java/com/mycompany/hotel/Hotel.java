@@ -22,19 +22,22 @@ public class Hotel {
                            """);
         Scanner menu = new Scanner(System.in);
 
-        short respuesta = menu.nextShort();
-        switch (respuesta) {
-            case 1 ->
-                System.out.println("Introduce los datos");
-            case 2 -> {
-                System.out.println("Introduce el identificador de reservas");
-                String id_reserva = menu.next();
-                System.out.println("La reserva a modificar es:" + id_reserva);
+        short respuesta;
+        do {
+            respuesta = menu.nextShort();
+            switch (respuesta) {
+                case 1 ->
+                        System.out.println("Introduce los datos");
+                case 2 -> {
+                    System.out.println("Introduce el identificador de reservas");
+                    String id_reserva = menu.next();
+                    System.out.println("La reserva a modificar es:" + id_reserva);
+                }
+                case 3 ->
+                        System.out.println("Introduce el identificador de reservas para anular");
+                default ->
+                        System.out.println("Adios");
             }
-            case 3 ->
-                System.out.println("Introduce el identificador de reservas para anular");
-            default ->
-                System.out.println("Adios");
-        }
+        } while (respuesta < 4);
     }
 }
